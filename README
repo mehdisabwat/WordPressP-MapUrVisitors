@@ -1,0 +1,40 @@
+Specs : Wordpress MapUrVisitors Plugin
+
+
+
+Functional needs :
+
+1. Show in a map, the full list of your Wordpress Site or blog 's visitors ; with pins.
+2. Each pin would #on mouse over # show a description field with the number of visitors per country, designed in a nice way.
+3. The plugin main page, shows a notifier that informs about the nearest visitors (same country), and show the top visitors (we talk about the country's user, not the user itself) from all time.
+4. When you click on the notifier you can (without having to start a new page) see the map.
+
+
+
+Technical Needs :
+
+1. MYSQL Database, to store the IP Location of all visitors (treatments to implement after to delete the IP entry to be able to keep just the country, this is what we need, plus we do not have the right to keep ip location in our database)
+2. Google Maps API integration, personalise pins, map layout and pin description.
+3. AJAX or javascript, to be able show the map instantly without refreshing the page.
+4. Treatments on the Database w/ PHP, by :
+1. deleting the IP adress as soon as we found the location
+2. being able to rank the visitors (identified by their country) i.e : 4 visitors (even if 3 were from the same IP) from Morocco, 3 from Tanzania => Morocco: 4 visitors./Tanzania: 3 visitors.
+3. Matching IP adresses that correspond to the same location, and print « Two visitors from xxx are viewing this site/blog »
+5. Integrating this to Wordpress using the WP API
+
+	Tools :
+
+1. LAMP or WAMP Architecture : Linux/Windows Apache2 MYSQL PHP5
+2. Google Maps API
+3. Wordpress API
+4. Github
+
+
+
+
+Let's start coding:))
+
+
+
+
+
